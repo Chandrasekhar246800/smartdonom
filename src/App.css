@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Landing page entrance animations */
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.2s forwards;
+  opacity: 0;
+}
+
+@keyframes lineGrow {
+  0% {
+    transform: scaleX(0);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+.animate-lineGrow {
+  transform-origin: center;
+  animation: lineGrow 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards;
+  opacity: 0.2;
+}
+
+@keyframes buttonUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-buttonUp {
+  animation: buttonUp 0.7s cubic-bezier(0.4, 0, 0.2, 1) 1.1s forwards;
+  opacity: 0;
+}
+
+@keyframes buttonFromLine {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scaleY(0.2) scaleX(0.7);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-20px) scaleY(1.1) scaleX(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-40px) scaleY(1) scaleX(1);
+  }
+}
+
+.animate-buttonFromLine {
+  animation: buttonFromLine 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  opacity: 0;
+}
+
+@keyframes fromLineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scaleY(0.2) scaleX(0.7);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-20px) scaleY(1.1) scaleX(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-40px) scaleY(1) scaleX(1);
+  }
+}
+
+.animate-fromLineUp {
+  animation: fromLineUp 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  opacity: 0;
+}
+
+@keyframes fromLineDown {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scaleY(0.2) scaleX(0.7);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(20px) scaleY(1.1) scaleX(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(40px) scaleY(1) scaleX(1);
+  }
+}
+
+.animate-fromLineDown {
+  animation: fromLineDown 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  opacity: 0;
+}
