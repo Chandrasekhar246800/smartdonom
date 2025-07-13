@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Uploaded by user -->
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M256 464C256 464 32 304 32 176C32 97.307 97.307 32 176 32C220.183 32 256 64 256 64C256 64 291.817 32 336 32C414.693 32 480 97.307 480 176C480 304 256 464 256 464Z" stroke="black" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M144 176C144 176 144 144 176 144C208 144 208 176 208 176" stroke="black" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M368 176C368 176 368 144 336 144C304 144 304 176 304 176" stroke="black" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
