@@ -116,12 +116,12 @@ function ForgotPassword({ userType = 'public' }) {
         )}
         {step === 4 && (
           <div className="text-center text-green-600 font-semibold mt-2">
-            Password reset successful! <a href={userType === 'public' ? '/donor/public' : '/donor/organization'} className="text-blue-600 underline ml-1">Back to Login</a>
+            Password reset successful! <a href={userType === 'public' ? '/donor/public' : userType === 'ngo' ? '/ngo' : '/donor/organization'} className="text-blue-600 underline ml-1">Back to Login</a>
           </div>
         )}
         {step !== 4 && (
           <div className="mt-6 text-center">
-            <a href={userType === 'public' ? '/donor/public' : '/donor/organization'} className="text-blue-600 hover:underline font-semibold">Back to Login</a>
+            <a href={userType === 'public' ? '/donor/public' : userType === 'ngo' ? '/ngo' : '/donor/organization'} className="text-blue-600 hover:underline font-semibold">Back to Login</a>
           </div>
         )}
       </div>
