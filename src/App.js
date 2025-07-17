@@ -10,6 +10,7 @@ import OrganizationDonor from './components/OrganizationDonor';
 import ForgotPassword from './components/ForgotPassword';
 import Dashboard from './components/Dashboard';
 import NGOSignup from './components/NGOSignup';
+import AboutUs from './components/AboutUs';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/ngo/forgot-password" element={<ForgotPassword userType="ngo" />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/ngo/signup" element={<NGOSignup />} />
+        <Route path="/about" element={<AboutUs />} />
       </Routes>
     </Router>
   );
